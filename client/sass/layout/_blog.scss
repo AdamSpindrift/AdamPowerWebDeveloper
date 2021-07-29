@@ -1,0 +1,18 @@
+.blog {
+    background-color: $color-primary;
+    padding: 2rem;
+    position: relative;
+    top: -47rem;
+    height: 200rem;
+
+    &__main {
+        color: $color-secondary-dark;
+        text-align: center;
+
+        &__heading-primary {
+            text-align: center;
+            margin-top: 15rem;
+        }
+    }
+    
+}

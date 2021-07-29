@@ -1,0 +1,49 @@
+.features {
+    background-color: $color-secondary;
+
+    grid-column: center-start / center-end;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    grid-column-gap: 10rem;
+    height: 50vw;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 25%;
+
+        color: $color-white-1;
+    }
+
+    &__img {
+        width: 90%;
+
+        display: flex;
+
+        &-2way {
+            width: 60%;
+            padding-top: 20%;
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(102deg) brightness(105%) contrast(103%);
+
+            &--small {
+                width: 45%;
+            }
+        }
+
+        &-3way {
+            width: 40%;
+            padding-top: 20%;
+        }
+    }
+
+    &__title {
+
+    }
+
+    &__description {
+
+    }
+}

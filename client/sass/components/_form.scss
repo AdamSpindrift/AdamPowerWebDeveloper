@@ -1,0 +1,63 @@
+.form {
+
+    &__input-label {
+        margin-top: 1.5rem;
+    }
+
+    &__text-area {
+        width: 75rem;
+        color: $color-primary;
+        display: block;
+        @include absCenter;
+        top: 62rem;
+        border: none;
+        padding: 0.5rem;
+
+        &:focus {
+            border: 3px solid $color-secondary-dark;
+        }
+
+        &:active {
+            border: 3px solid $color-secondary-dark;
+        }
+    }
+
+    &__submit {
+        appearance: none;
+        outline: 0;
+        background-color: transparent;
+        border: 3px solid $color-white-1;
+        border-radius: 3rem;
+        box-shadow: $shadow-1;
+        padding: 1rem 1.5rem;
+        margin: 20px;
+        margin-bottom: 1rem;
+        margin-top: 40rem;
+        color: $color-white-1;
+        height: 4.5rem;
+        width: 15rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-secondary;
+        }
+
+        // &:focus {
+        //     transform: translate(-1rem, -1rem) scale(0.9);
+
+            
+        // }
+
+        &:active {
+            transform: translate(1rem, 0rem) scale(0.9);
+        }
+    }
+}
+
+input {
+    color: $color-primary;
+    border: none;
+}

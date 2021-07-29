@@ -1,0 +1,14 @@
+.work {
+    background-color: $color-secondary;
+    color: $color-white-1;
+    
+    grid-column: center-start / center-end;
+    height: 100vh;
+
+    &__heading {
+        margin: 4rem 0;
+        font-size: 7.5rem;
+    }
+
+    
+}

@@ -1,0 +1,42 @@
+.footer {
+    height: 100vh;
+    padding: 10rem 0;
+    background-color: $color-primary;
+    color: $color-secondary-dark;
+    text-align: center;
+    position: relative;
+
+    &__logo-box {
+        margin-bottom: 8rem;
+    }
+
+    &__logo {
+        width: 30%;
+    }
+
+    &__navigation {
+		border-top: 1px solid $color-secondary-dark;
+		padding-top: 2rem;
+		display: inline-block;
+        margin-bottom: 4rem;
+	}
+
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+        display: inline-block;
+        font-size: $default-font-size;
+        margin: 2rem 7rem;
+
+		&:not(:last-child) {
+			margin-right: 1.5rem;
+		}
+    }
+    
+    &__copyright {
+        margin: 8rem;
+    }
+
+}

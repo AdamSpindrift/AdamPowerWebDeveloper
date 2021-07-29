@@ -1,0 +1,121 @@
+.border {
+    
+    
+    &-1 {
+        background-color: $color-primary;
+    }
+
+    &-2 {
+        background-color: $color-secondary;
+    }
+
+    &-3 {
+        background-color: $color-secondary;
+    }
+
+    &-4 {
+        background-color: $color-secondary;
+    }
+
+    &-5 {
+        background-color: $color-primary;
+    }
+
+    &-6 {
+        background-color: $color-primary;
+    }
+
+    &-7 {
+        background-color: $color-secondary;
+    }
+
+    &-8 {
+        background-color: $color-secondary;
+    }
+
+    &-9 {
+        background-color: $color-white-1;
+    }
+
+    &-10 {
+        background-color: $color-white-1;
+    }
+
+    &-11 {
+        background-color: $color-primary;
+    }
+
+    &-12 {
+        background-color: $color-primary;
+    }
+
+
+}
+
+.welcome {
+    background-image: linear-gradient(
+        to right, 
+        rgba($color-secondary, 1), 
+        rgba($color-secondary, 1));
+    -webkit-clip-path: polygon(55% 0, 105% 0, 105% 100%, 15% 100%);
+    clip-path: polygon(55% 0, 105% 0, 105% 100%, 15% 100%);
+
+    color: $color-white-1;
+
+    grid-column: col-start 2 / center-end;
+    grid-row: 1 / 2;
+    z-index: 1;
+    
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    text-align: center;
+    padding-right: 17rem;
+
+    &__background {
+        grid-column: col-start 3 / center-end;
+        grid-row: 1 / 2;
+        background-color: $color-primary;
+        z-index: 0;
+        
+    }
+
+    &__title {
+        margin-bottom: 5rem;
+    }
+
+    &__text {
+        width: 25vw;
+        margin-bottom: 5rem;
+    }
+
+    &__btn {
+        width: 30rem;
+        justify-self: center;
+        margin-bottom: 5rem;
+    }
+}
+
+.title {
+    background-color: $color-primary;
+    color: $color-secondary-dark;
+
+    grid-column: center-start / col-end 2;
+    grid-row: 1 / 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &__logo {
+        width: 50%;
+    }
+
+    &__headshot {
+        width: 50%;
+        border-radius: 50%;
+        margin: 5rem 0;
+    }
+}

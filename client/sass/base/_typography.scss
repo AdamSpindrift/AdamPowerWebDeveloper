@@ -1,0 +1,138 @@
+@import url("//hello.myfonts.net/count/3ca56e");
+
+@font-face {
+  font-family: "Town10Display-Regular";
+  src: url("./webFonts/Town10Display-Regular/font.woff2") format("woff2"), 
+        url("./webFonts/Town10Display-Regular/font.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+  font-family: "Town10Display-Light";
+  src: url("./webFonts/Town10DisplayLight/font.woff2") format("woff2"), 
+        url("./webFonts/Town10DisplayLight/font.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+}
+
+// font-family: 'Encode Sans SC', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Allura', cursive;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+  }
+
+h1 {
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: 200;
+  font-size: 10rem;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: 200;
+  font-size: 6rem;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: 200;
+  font-size: 4rem;
+  margin: 0;
+}
+
+h4 {
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  margin: 0;
+}
+
+h5 {
+  font-family: 'Encode Sans SC', sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 30rem;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+.adampower {
+  font-family: 'Allura', cursive;
+  font-size: 12rem;
+}
+
+.welcome {
+
+  &__text {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+  }
+}
+
+.title {
+
+  &__webdev {
+    font-size: 5rem;
+    margin-top: -3rem;
+  }
+}
+
+
+
+
+.footer {
+
+  &__navigation {
+    font-family: 'Encode Sans SC', sans-serif;
+    font-weight: 200;
+  }
+
+  &__copyright {
+
+    &-text {
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 2px;
+      font-weight: 300;
+    }
+    
+  }
+}
+
+.form {
+
+  &__input-label {
+    font-family: 'Encode Sans SC', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 200;
+  }
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 300;
+  padding: 0.2rem;
+}
+
+textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.contact__thanks {
+  font-family: 'Poppins', sans-serif;
+  font-size: 5rem;
+  font-weight: 300;
+}

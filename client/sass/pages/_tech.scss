@@ -1,0 +1,66 @@
+.tech {
+    background-color: $color-white-1;
+    color: $color-secondary-dark;
+    
+    grid-column: center-start / center-end;
+    text-align: center;
+
+    &__heading {
+        margin: 4rem 0;
+        font-size: 7.5rem;
+    }
+
+    &__tech-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, min-content);
+
+        grid-column-gap: 3rem;
+        grid-row-gap: 6rem;
+
+        justify-items: center;
+        align-items: center;
+
+        padding-bottom: 5rem;
+        
+    }
+
+    &__card {
+        width: 11vw;
+
+        &--node {
+            grid-column: 3 / 5;
+        }
+
+        &--mongodb {
+            grid-column: 5 / 7;
+        }
+
+        &--sass {
+            grid-column: 3 / 5;
+        }
+
+        &--aws {
+            grid-column: 5 / 7;
+        }   
+        
+    }
+
+    
+
+    &__img {
+        width: 100%;
+
+        &--large {
+            width: 175%;
+            margin-left: -35%;
+        }
+    }
+    
+
+    &__heading-secondary {
+        font-size: 3rem;
+    }
+
+    
+}
