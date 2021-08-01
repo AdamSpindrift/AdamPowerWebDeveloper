@@ -4,4 +4,46 @@
 
     grid-column: center-start / center-end;
     height: 100vh;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    
+    &__container {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+    &__btn {
+        margin-top: 5rem;
+        width: 30rem;
+        align-self: center;
+        font-size: 3rem;
+
+        &:active {
+            transform: translate(1rem, 0rem) scale(0.95);
+        }
+    }
+
+    &__label {
+        justify-self: start;
+    }
+
+    &__heading {
+        
+    }
+
+    &__thanks-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        grid-row: 1 / 2;
+    }
+
+    &__home {
+        margin-top: 5rem;
+    }
 }

@@ -7,6 +7,7 @@ const ws = require("ws");
 const cluster = require("cluster");
 const numCPUs = require("os").cpus().length;
 const bodyParser = require("body-parser");
+const api = require("./routes/api");
 const router = express.Router();
 const request = require("request");
 const path = require("path");
@@ -30,7 +31,7 @@ app.all("*", (req, res, next) => {
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
-
+app.use("/api", api);
 
 
 // Route to launch React index

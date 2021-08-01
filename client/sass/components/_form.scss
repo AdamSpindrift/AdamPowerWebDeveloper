@@ -6,10 +6,6 @@
 
     &__text-area {
         width: 75rem;
-        color: $color-primary;
-        display: block;
-        @include absCenter;
-        top: 62rem;
         border: none;
         padding: 0.5rem;
 
@@ -55,9 +51,17 @@
             transform: translate(1rem, 0rem) scale(0.9);
         }
     }
+
+    &__input {
+
+        
+        &--small {
+            width: 35rem;
+
+        }
+    }
 }
 
 input {
-    color: $color-primary;
     border: none;
 }

@@ -12,7 +12,7 @@ const routes = {
     "/projects": () =><Projects />,
     "/retro": ()=><Retro />,
     "/contact": ()=><Contact />,
-    "/tscs": ()=><TSCS />,
+    "/thanks": ()=><TSCS />,
     "//:id": ({id}) =><Index id={id} />,
 };
 

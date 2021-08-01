@@ -11,14 +11,17 @@ function ContactThanks () {
     return (
         <div id="contact-thanks" className="contact">
             <Nav />
-            <div className="contact__container">
+            <div className="contact__thanks-container">
                 
-                <div className="absCenter">
-                    <h5 className="contact__thanks">Thanks for your message</h5>
-                    <h5 className="contact__thanks margin-top-small">We will be in touch shortly</h5>
-                </div>
+                <h5 className="contact__thanks">Thanks for your message</h5>
+                <h5 className="contact__thanks">We will be in touch shortly</h5>
+
+                <a href="/" class="contact__home">
+                  <button className="btn btn__secondary">Home</button>
+                </a>    
 
             </div>
+            
         </div>
     )
 };

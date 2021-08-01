@@ -5,20 +5,15 @@ import {navigate, A} from "hookrouter";
  
 function Nav() {
 
-    const navDesign = () => {
-        navigate("/design");
-    };
-
-    const navEquipmentHire = () => {
-        navigate("/equipmenthire");
-    };
-
-    const navContact = () => {
-        navigate("/contact");
-    };
-
     const navHome = () => {
         navigate("/");
+    };
+
+    const unCheck= () => {
+        var x = document.getElementById("navi-toggle");
+        x.checked=false;
+        console.log("Un-Checked");
+        
     };
 
 
@@ -33,54 +28,34 @@ function Nav() {
             <nav className="navigation__nav">
                 <ul className="navigation__list">
                     <li className="navigation__item">
-                        <form onSubmit={navDesign}>
-                            <button className="navigation__link" type ="submit">Lighting Director</button>
-                        </form>
-                    </li>
-                    <li className="navigation__item">
-                        <form onSubmit={navEquipmentHire}>
-                            <button className="navigation__link navigation__link-left1" type ="submit">Console Operator</button>
-                        </form>
-                    </li>
-                    <li className="navigation__item">
-                        <form onSubmit={navEquipmentHire}>
-                            <button className="navigation__link navigation__link-right1" type ="submit">System Design</button>
-                        </form>
-                    </li>
-                    <li className="navigation__item">
-                        <form onSubmit={navEquipmentHire}>
-                            <button className="navigation__link navigation__link-left2" type ="submit">Equipment Hire</button>
-                        </form>
-                    </li>
-                    <li className="navigation__item">
-                        <a href="/#sebwilliams" className="navigation__link navigation__link-right2">
-							Seb Williams
+                        <a href="/#features" onClick={unCheck} className="navigation__link">
+							Features
 						</a>
                     </li>
                     <li className="navigation__item">
-                        <form onSubmit={navContact}>
-                            <button className="navigation__link navigation__link-left3" type ="submit">Get In Touch</button>
-                        </form>
-                    </li>
-                    <li className="navigation__item">
-                        <a href="https://www.studioscan.co.uk" className="navigation__link navigation__link-right3">
-							Studio Scan
+                        <a href="/#process" onClick={unCheck} className="navigation__link">
+							Process
 						</a>
                     </li>
                     <li className="navigation__item">
-                        <a href="/#blog" className="navigation__link navigation__link-left4">
-							Thoughts
+                        <a href="/#work" onClick={unCheck} className="navigation__link">
+							Work
 						</a>
                     </li>
                     <li className="navigation__item">
-                        <form onSubmit={navEquipmentHire}>
-                            <button className="navigation__link navigation__link-right4" type ="submit">History</button>
-                        </form>
+                        <a href="/#tech" onClick={unCheck} className="navigation__link">
+							Tech
+						</a>
                     </li>
                     <li className="navigation__item">
-                        <form onSubmit={navHome}>
-                            <button className="navigation__link navigation__link-left5" type ="submit">Home</button>
-                        </form>
+                        <a href="/#contact" onClick={unCheck} className="navigation__link">
+							Contact
+						</a>
+                    </li>
+                    <li className="navigation__item">
+                        <a href="/" onClick={unCheck} className="navigation__link">
+							Home
+						</a>
                     </li>
                 </ul>
             </nav>

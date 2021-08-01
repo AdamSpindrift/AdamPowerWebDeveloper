@@ -18,4 +18,14 @@
             color: $color-primary;
         }
     }
+
+    &__secondary {
+        background-color: $color-secondary;
+        color: $color-primary;
+
+        &:hover {
+            background-color: $color-secondary-dark;
+            color: $color-primary;
+        }
+    }
 }

@@ -1,8 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import { navigate } from "hookrouter";
 import SocialShare from "./generic/SocialShares";
+import axios from "axios";
 // Custom Modules
 import scrollHandler from "./generic/scrollHandler";
+import Loading from "./generic/Loading";
+// SVGs
 import dataChart from "../svg/undraw_Data_points_re_vkpq.svg";
 import mobile from "../svg/2205195_mobile_phone_screen_smart_icon.svg";
 import desktop from "../svg/290121_computer_desktop_monitor_computer screen_icon.svg";
@@ -17,6 +20,7 @@ import ps from "../svg/technology/photoshop-cc-logo-svgrepo-com.svg";
 import xd from "../svg/technology/adobe-xd-logo-svgrepo-com (1).svg";
 
 
+
 function IndexMain() {
 
       const shareURL = "https://www.backroom.co.uk";
@@ -26,6 +30,47 @@ function IndexMain() {
       const scrollWelcome2 = scrollHandler(400);
 
       const scrollWelcome3 = scrollHandler(550);
+
+      // Contact Form
+      const [loading, setLoading] = useState(false);
+
+      const [details, setDetails] = useState({
+          fName: "",
+          lName: "",
+          email: "",
+          message: "",
+      })
+
+      function handleChange(event) {
+          const{name, value} = event.target;
+      
+          setDetails((prevValue) => {
+            
+            return {
+              ...prevValue,
+              [name]:value
+            };
+          })
+      };
+
+
+      function handleSubmit(e) {
+          e.preventDefault();
+          setLoading(true);
+
+          axios.post(process.env.REACT_APP_SERVER_ROUTE + "api/webenquiry", {details})
+              .then(res => {
+                  console.log(res.data.message);
+                  e.returnValue = false;
+                  navigate('/thanks');
+                  window.location.reload();
+                  setTimeout(() => {
+                        setLoading(false);      
+                  }, 50);
+                  
+          });
+
+      };
 
       
   
@@ -48,7 +93,9 @@ function IndexMain() {
                   <h3 className="welcome__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim dignissim mauris quis consectetur.</h3>
                   <h3 className="welcome__text">Donec vestibulum orci in iaculis luctus. Etiam venenatis efficitur lacus ut pretium. Suspendisse imperdiet imperdiet pretium. Vivamus nisl elit, ultrices interdum ultricies quis, pulvinar euismod lectus.</h3>
                   <h3 className="welcome__text">When your ready give me a shout and we can get cracking building a great site.</h3>
+                  <a href="/#contact">
                   <button className="btn btn__primary welcome__btn">Get In Touch</button>
+                  </a>
             </section>
 
             <div className="border-2">&nbsp;</div>
@@ -142,6 +189,38 @@ function IndexMain() {
             <section id="work" className="work">
 
                   <h2 className="work__heading">Our Work</h2>
+
+                  <div className="work__grid">
+
+                        <img src="../images/projects/Backroom_International_Hire_Solutions.png" alt="Backroom Internation Hire Solutions" className="work__img" />
+
+                        <div className="work__text">
+                              <h3 className="work__title">Backroom International Hire Solutions</h3>
+                              <p className="work__description">Jack from Backroom approached us to come up with a modern new look for the backroom website. Here is what we came up with...</p>
+                              <br></br>
+                              <a href="https://www.backroom.co.uk/" rel="noopener noreferrer" target="_blank">
+                              <p className="work__link">Check me out &#8594;</p>
+                              </a>
+                        </div>
+
+                        <img src="../images/projects/Metrics.png" alt="Metrics" className="work__img" />
+
+                        <div className="work__text">
+                              <h3 className="work__title">Metrics</h3>
+                              <p className="work__description">Metrics is an application we built for djca Chartered Accoutants. It retrieves jobs from their CRM system and allows employees to log time spent on each job. We can then use the data to give accurate visibility on how long each job takes and the profit/loss on each job.</p>
+                        </div>
+
+                        <img src="../images/projects/Spindrift_Projects.png" alt="Spindrift Projects" className="work__img" />
+
+                        <div className="work__text">
+                              <h3 className="work__title">Spindrift Projects</h3>
+                              <p className="work__description">We used a lot of imagery from projects on this site to really show off the shows Spindrift Projects design.</p>
+                              <br></br>
+                              <a href="https://www.spindriftprojects.com/" rel="noopener noreferrer" target="_blank">
+                              <p className="work__link">Check me out &#8594;</p>
+                              </a>
+                        </div>
+                  </div>
 
 
             </section>
@@ -237,11 +316,37 @@ function IndexMain() {
 
                   <h2 className="contact__heading">Get In Touch</h2>
 
+                
+                  <form onSubmit={handleSubmit} className="contact__container">
+                        <div>
+                              <h4 className="form__input-label contact__label">First Name</h4>
+                              <input onChange={handleChange} className="form__input form__input--small" type="text" value={details.fName} name="fName" required/>
+                        </div>
+                        <div>
+                              <h4 className="form__input-label contact__label">Last Name</h4>
+                              <input onChange={handleChange} className="form__input form__input--small" type="text" value={details.lName} name="lName" required/>
+                        </div>
+                        <div>
+                              <h4 className="form__input-label contact__label">email</h4>
+                              <input onChange={handleChange} className="form__input form__input--small" type="email" value={details.email} name="email" required/>
+                        </div>
+                        <div>
+                              <h4 className="form__input-label contact__label">Message</h4>
+                              <textarea onChange={handleChange} className="form__text-area" type="textarea" rows={12} value={details.message} name="message" required/>
+                        </div>
+                        
+                        <button className="btn btn__secondary contact__btn" type="submit">Send Message</button>
+                  </form>
+
+                  
+
+                  
+
             </section>
 
             <div className="border-12">&nbsp;</div>
 
-
+            {loading ? <Loading /> : <div className="loading__nbsp">&nbsp;</div>}
       </main>
     ); 
   };
