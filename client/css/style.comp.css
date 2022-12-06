@@ -261,6 +261,9 @@ textarea {
   padding: 1.8rem 3rem;
   cursor: pointer;
   transition: all 0.2s; }
+  @media (max-width: 67em) {
+    .btn {
+      font-size: 8rem; } }
   .btn__primary {
     background-color: #dec6b1;
     color: #505050; }
@@ -408,6 +411,7 @@ input {
       margin-right: 1.5rem; }
     @media (max-width: 67em) {
       .footer__item {
+        display: flex;
         margin: none; } }
   .footer__copyright {
     margin: 8rem; }
