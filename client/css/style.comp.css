@@ -524,7 +524,7 @@ input {
   transform: translateY(6.5rem); }
   @media (max-width: 67em) {
     .navigation__checkbox:checked ~ .navigation__nav {
-      top: 5%; } }
+      top: 15%; } }
 
 .navigation__icon {
   position: relative;
