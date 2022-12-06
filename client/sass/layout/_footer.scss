@@ -1,5 +1,5 @@
 .footer {
-    height: 100vh;
+    height: 120rem;
     padding: 10rem 0;
     background-color: $color-primary;
     color: $color-secondary-dark;
@@ -12,6 +12,10 @@
 
     &__logo {
         width: 30%;
+
+        @include respond(1080) {
+            width: 60%;
+        }
     }
 
     &__navigation {

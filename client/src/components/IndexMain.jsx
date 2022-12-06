@@ -91,7 +91,6 @@ function IndexMain() {
           })
       };
 
-      console.log("Web Route is b - " + process.env.REACT_APP_SERVER_ROUTE + "api/webenquiry");
 
       function handleSubmit(e) {
           e.preventDefault();

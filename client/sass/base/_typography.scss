@@ -97,7 +97,7 @@ p {
 
   &__title {
     @include respond(1080) {
-      font-size: 8rem;
+      font-size: 10rem;
     }
   }
 }
@@ -157,6 +157,26 @@ p {
       font-weight: 300;
     }
     
+  }
+
+  &__link {
+    font-size: 6rem;
+    transition: all 0.4s;
+
+    &:hover,
+    &:active {
+      color: $color-white-1;
+      font-size: 7rem;;
+    }
+
+    @include respond(1080) {
+      font-size: 8rem;
+      &:hover,
+      &:active {
+        color: $color-white-1;
+        font-size: 9rem;;
+      }
+    }
   }
 }
 
