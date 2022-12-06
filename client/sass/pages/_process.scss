@@ -73,7 +73,6 @@
         grid-row: 1 / 2;
         align-self: end;
 
-        font-size: 3rem;
     }
 
     &__title {
@@ -81,9 +80,14 @@
         grid-row: 1 / 2;
         align-self: end;
 
-        font-size: 6rem;
+        
         margin-bottom: -1rem;
         padding-left: 4rem;
+
+        @include respond(1080) {
+            padding-left: 8rem;
+        }
+      
     }
 
     &__text {

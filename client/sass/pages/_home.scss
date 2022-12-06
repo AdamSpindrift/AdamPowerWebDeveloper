@@ -176,5 +176,12 @@
         
     }
 
+    &__webdev {
+        
+        @include respond(1080) {
+            padding-top: 2rem;
+        }
+    }
+
    
 }

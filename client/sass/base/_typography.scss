@@ -37,6 +37,10 @@ h2 {
   font-weight: 200;
   font-size: 6rem;
   margin: 0;
+
+  @include respond(1080) {
+    font-size: 12rem;
+  }
 }
 
 h3 {
@@ -64,7 +68,11 @@ p {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   font-weight: 300;
-  line-height: normal
+  line-height: normal;
+
+  @include respond(1080) {
+    font-size: 6rem;
+  }
 }
 
 .adampower {
@@ -77,6 +85,16 @@ p {
   &__text {
     font-family: "Poppins", sans-serif;
     font-size: 2rem;
+
+    @include respond(1080) {
+      font-size: 5rem;
+    }
+  }
+
+  &__title {
+    @include respond(1080) {
+      font-size: 8rem;
+    }
   }
 }
 
@@ -85,7 +103,36 @@ p {
   &__webdev {
     font-size: 5rem;
     margin-top: -3rem;
+
+    
   }
+}
+
+.feature {
+
+  &__description {
+
+  }
+}
+
+.process {
+
+  &__title {
+    font-size: 6rem;
+
+    @include respond(1080) {
+      font-size: 10rem;
+    }
+  }
+
+  &__number {
+    
+    font-size: 3rem;
+
+    @include respond(1080) {
+      font-size: 6rem;
+    }
+}
 }
 
 

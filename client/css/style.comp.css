@@ -118,6 +118,9 @@ h2 {
   font-weight: 200;
   font-size: 6rem;
   margin: 0; }
+  @media (max-width: 67em) {
+    h2 {
+      font-size: 12rem; } }
 
 h3 {
   font-family: 'Encode Sans SC', sans-serif;
@@ -142,6 +145,9 @@ p {
   font-size: 2rem;
   font-weight: 300;
   line-height: normal; }
+  @media (max-width: 67em) {
+    p {
+      font-size: 6rem; } }
 
 .adampower {
   font-family: 'Allura', cursive;
@@ -150,10 +156,29 @@ p {
 .welcome__text {
   font-family: "Poppins", sans-serif;
   font-size: 2rem; }
+  @media (max-width: 67em) {
+    .welcome__text {
+      font-size: 5rem; } }
+
+@media (max-width: 67em) {
+  .welcome__title {
+    font-size: 8rem; } }
 
 .title__webdev {
   font-size: 5rem;
   margin-top: -3rem; }
+
+.process__title {
+  font-size: 6rem; }
+  @media (max-width: 67em) {
+    .process__title {
+      font-size: 10rem; } }
+
+.process__number {
+  font-size: 3rem; }
+  @media (max-width: 67em) {
+    .process__number {
+      font-size: 6rem; } }
 
 .footer__navigation {
   font-family: 'Encode Sans SC', sans-serif;
@@ -370,6 +395,10 @@ input {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 67em) {
+    .navigation__button {
+      top: 1rem;
+      right: 1rem; } }
 
 .navigation__background {
   height: 7rem;
@@ -379,6 +408,10 @@ input {
   background-image: radial-gradient(transparent, transparent);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media (max-width: 67em) {
+    .navigation__background {
+      height: 100vh;
+      top: -100vh; } }
 
 .navigation__nav {
   position: fixed;
@@ -392,13 +425,17 @@ input {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: -10rem;
+  top: -50rem;
   left: 50%;
   transform: translateX(-50%);
   list-style: none;
   text-align: center;
   width: 80vw;
   transition: all 0.8s cubic-bezier(0.65, 0, 0.35, 1); }
+  @media (max-width: 67em) {
+    .navigation__list {
+      flex-direction: column;
+      top: 50%; } }
 
 .navigation__item {
   margin: 1rem; }
@@ -421,6 +458,9 @@ input {
   text-decoration: none;
   text-align: center;
   transition: all 0.4s; }
+  @media (max-width: 67em) {
+    .navigation__link {
+      font-size: 10rem; } }
   .navigation__linkspan {
     margin-right: 1.5rem;
     display: inline-block; }
@@ -668,6 +708,9 @@ input {
         margin-bottom: 10rem; } }
     .title__headshot2 {
       align-self: center; }
+  @media (max-width: 67em) {
+    .title__webdev {
+      padding-top: 2rem; } }
 
 .process {
   background-color: #dec6b1;
@@ -713,15 +756,16 @@ input {
   .process__number {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    align-self: end;
-    font-size: 3rem; }
+    align-self: end; }
   .process__title {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     align-self: end;
-    font-size: 6rem;
     margin-bottom: -1rem;
     padding-left: 4rem; }
+    @media (max-width: 67em) {
+      .process__title {
+        padding-left: 8rem; } }
   .process__text {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
@@ -744,8 +788,15 @@ input {
     justify-items: center;
     align-items: center;
     padding-bottom: 5rem; }
+    @media (max-width: 67em) {
+      .tech__tech-grid {
+        display: flex;
+        flex-direction: column; } }
   .tech__card {
     width: 11vw; }
+    @media (max-width: 67em) {
+      .tech__card {
+        width: 40vw; } }
     .tech__card--node {
       grid-column: 3 / 5; }
     .tech__card--mongodb {

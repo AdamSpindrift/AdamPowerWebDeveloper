@@ -22,11 +22,20 @@
         align-items: center;
 
         padding-bottom: 5rem;
+
+        @include respond(1080) {
+            display: flex;
+            flex-direction: column;
+        }
         
     }
 
     &__card {
         width: 11vw;
+
+        @include respond(1080) {
+            width: 40vw;
+        }
 
         &--node {
             grid-column: 3 / 5;

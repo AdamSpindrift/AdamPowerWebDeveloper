@@ -64,7 +64,7 @@ app.use(helmet.xssFilter());
 
 
 wss.on("connection", function (wss) {
-    wss.send("Connection Established with Backroom node server");
+    wss.send("Connection Established with Adam Power node server");
 
     wss.on("message", (e) => {
         console.log("Message recieved - " + e.data);
