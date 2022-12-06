@@ -10,7 +10,7 @@
         padding: 0.5rem;
 
         @include respond(1080) {
-            width: 90vw;
+            width: 80vw;
         }
 
         &:focus {
@@ -65,7 +65,7 @@
             padding: 0.5rem;
 
             @include respond(1080) {
-                width: 90vw;
+                width: 80vw;
             }
 
         }
