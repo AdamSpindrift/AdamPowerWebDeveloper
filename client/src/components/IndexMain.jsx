@@ -205,67 +205,67 @@ function IndexMain() {
             <section id="features" className="features">
 
                   <div className="features__card">
-                        <motion.div
+                        {/* <motion.div
                               ref={ref}
                               animate={controls}
                               initial="hidden"
-                              variants={featureVariants}>
+                              variants={featureVariants}> */}
                         <div className="features__img">
                               <img src={mobile} alt="Mobile" className="features__img features__img-2way features__img-2way--small" />
                               <img src={desktop} alt="Desktop" className="features__img features__img-2way" />
                         </div>
-                        </motion.div>
+                        {/* </motion.div>
                         <motion.div
                               ref={ref}
                               animate={controls}
                               initial="hidden"
-                              variants={featureVariants2}>
+                              variants={featureVariants2}> */}
                         <h2 className="features__title">Responsive</h2>
                         <h2 className="features__title">Design</h2>
                         <p className="features__description">Your site needs to look great on all platforms, whether taking a mobile first approach or desktop first approach.</p>
-                        </motion.div>
+                        {/* </motion.div> */}
                   </div>
 
                   <div className="features__card">
-                        <motion.div
+                        {/* <motion.div
                               ref={ref}
                               animate={controls}
                               initial="hidden"
-                              variants={featureVariants}>
+                              variants={featureVariants}> */}
                         <div className="features__img">
                               <img src="../images/Spindrift S.png" alt="Adam Power Web Development Logo" className="features__img features__img-3way" />
                               <img src="../images/Backroom_Logo.png" alt="Backroom International Hire Solutions Logo" className="features__img features__img-3way" />
                               
                         </div>
-                        </motion.div>
+                        {/* </motion.div>
                         <motion.div
                               ref={ref}
                               animate={controls}
                               initial="hidden"
-                              variants={featureVariants2}>
+                              variants={featureVariants2}> */}
                         <h2 className="features__title">Digital</h2>
                         <h2 className="features__title">Marketing</h2>
                         <p className="features__description">Looking to sell your ideas to the world? Having a slick, modern website telling your customers about what you offer is essential.</p>
-                        </motion.div>
+                        {/* </motion.div> */}
                   </div>
 
                   <div className="features__card">
-                        <motion.div
+                        {/* <motion.div
                               ref={ref}
                               animate={controls}
                               initial="hidden"
-                              variants={featureVariants}>
+                              variants={featureVariants}> */}
                         <img src={dataChart} alt="Data Charts" className="features__img features__img-webapps" />
-                        </motion.div>
+                        {/* </motion.div>
                         <motion.div
                               ref={ref}
                               animate={controls}
                               initial="hidden"
-                              variants={featureVariants2}>
+                              variants={featureVariants2}> */}
                         <h2 className="features__title">Web</h2>
                         <h2 className="features__title">Apps</h2>
                         <p className="features__description">Do you need an application to help your business grow? I love building web applications and can't wait to dive straight in.</p>
-                        </motion.div>
+                        {/* </motion.div> */}
                   </div>
 
             </section>
