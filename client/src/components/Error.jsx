@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Nav from "./generic/Nav";
 
-function ContactThanks () {
+function Error () {
 
 
     return (
@@ -9,8 +9,8 @@ function ContactThanks () {
             <Nav />
             <div className="contact__thanks-container">
                 
-                <h5 className="contact__thanks">Thanks for your message</h5>
-                <h5 className="contact__thanks">We will be in touch shortly</h5>
+                <h5 className="contact__thanks">Something went wrong your message wasn't sent</h5>
+                <h5 className="contact__thanks">please contact adam@adampower.io</h5>
 
                 <a href="/" class="contact__home">
                   <button className="btn btn__secondary">Home</button>
@@ -22,4 +22,4 @@ function ContactThanks () {
     )
 };
 
-export default ContactThanks;
+export default Error;

@@ -91,6 +91,7 @@ function IndexMain() {
           })
       };
 
+      console.log("Web Route is - " + process.env.REACT_APP_SERVER_ROUTE + "api/webenquiry");
 
       function handleSubmit(e) {
           e.preventDefault();
@@ -104,9 +105,19 @@ function IndexMain() {
                   window.location.reload();
                   setTimeout(() => {
                         setLoading(false);      
-                  }, 50);
+                  }, 50);      
+            })
+            .catch((err) => {
+                  if(err) {
+                        console.log("Email Error");
+                        navigate('/error');
+                        window.location.reload();
+                        setTimeout(() => {
+                        setLoading(false);      
+                        }, 50); 
+                  };
                   
-          });
+            });
 
       };
       
