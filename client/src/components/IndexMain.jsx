@@ -20,6 +20,7 @@ import ae from "../svg/technology/after-effects-cc-logo-svgrepo-com.svg";
 import ai from "../svg/technology/adobe-illustrator-cc-logo-svgrepo-com.svg";
 import ps from "../svg/technology/photoshop-cc-logo-svgrepo-com.svg";
 import xd from "../svg/technology/adobe-xd-logo-svgrepo-com (1).svg";
+require("dotenv").config()
 
 
 
