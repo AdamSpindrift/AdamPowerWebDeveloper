@@ -39,6 +39,7 @@
 		}
 
         @include respond(1080) {
+            display: flex;
             margin: none;
         }
     
