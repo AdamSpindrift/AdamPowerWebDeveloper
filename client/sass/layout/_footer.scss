@@ -37,6 +37,11 @@
 		&:not(:last-child) {
 			margin-right: 1.5rem;
 		}
+
+        @include respond(1080) {
+            margin: 1rem 2rem;
+        }
+    
     }
     
     &__copyright {

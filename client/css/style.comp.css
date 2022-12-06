@@ -211,7 +211,11 @@ p {
 .form__input-label {
   font-family: 'Encode Sans SC', sans-serif;
   letter-spacing: 2px;
-  font-weight: 200; }
+  font-weight: 200;
+  font-size: 4rem; }
+  @media (max-width: 67em) {
+    .form__input-label {
+      font-size: 6rem; } }
 
 input {
   font-family: 'Poppins', sans-serif;
@@ -279,7 +283,7 @@ textarea {
   padding: 0.5rem; }
   @media (max-width: 67em) {
     .form__text-area {
-      width: 90vw; } }
+      width: 60vw; } }
   .form__text-area:focus {
     border: 3px solid #505050; }
   .form__text-area:active {
@@ -314,7 +318,7 @@ textarea {
   padding: 0.5rem; }
   @media (max-width: 67em) {
     .form__input--small {
-      width: 90vw; } }
+      width: 60vw; } }
 
 input {
   border: none; }
@@ -402,6 +406,9 @@ input {
     margin: 2rem 7rem; }
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
+    @media (max-width: 67em) {
+      .footer__item {
+        margin: 1rem 2rem; } }
   .footer__copyright {
     margin: 8rem; }
 
