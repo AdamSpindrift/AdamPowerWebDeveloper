@@ -100,5 +100,9 @@
         grid-row: 2 / 3;
 
         width: 20vw;
+
+        @include respond(1080) {
+            width: 40vw;
+        }
     }
 }
