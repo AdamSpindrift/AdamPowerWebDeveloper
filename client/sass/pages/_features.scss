@@ -10,10 +10,22 @@
     grid-column-gap: 10rem;
     height: 50vw;
 
+    @include respond(1080) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 10rem;  
+    }
+
     &__card {
         display: flex;
         flex-direction: column;
         flex: 0 0 25%;
+
+        @include respond(1080) {
+            width: 40vw;
+        }
 
         color: $color-white-1;
     }
@@ -35,6 +47,10 @@
 
         &-3way {
             width: 40%;
+            padding-top: 20%;
+        }
+
+        &-webapps {
             padding-top: 20%;
         }
     }

@@ -7,6 +7,10 @@
 
     &-2 {
         background-color: $color-secondary;
+
+        @include respond(1080) {
+            background-color: $color-primary;
+        }
     }
 
     &-3 {
@@ -53,18 +57,24 @@
 }
 
 .welcome {
+
+    grid-column: col-start 2 / center-end;
+    grid-row: 1 / 2;
+    z-index: 1;
+
+    
+
+
     background-image: linear-gradient(
         to right, 
         rgba($color-secondary, 1), 
         rgba($color-secondary, 1));
     -webkit-clip-path: polygon(55% 0, 105% 0, 105% 100%, 15% 100%);
-    clip-path: polygon(55% 0, 105% 0, 105% 100%, 15% 100%);
+    clip-path: polygon(55% 0, 105% 0, 105% 100%, 15% 101%);
 
     color: $color-white-1;
 
-    grid-column: col-start 2 / center-end;
-    grid-row: 1 / 2;
-    z-index: 1;
+    
     
     display: grid;
     justify-content: end;
@@ -72,11 +82,28 @@
     text-align: center;
     padding-right: 17rem;
 
+    @include respond(1080) {
+        grid-column: center-start / center-end;
+        grid-row: 2 / 3;
+        background-image: none;
+        justify-content: center;
+        clip-path: none;
+        margin-top: 3rem;
+        padding-right: 0;
+    }
+
+
     &__background {
         grid-column: col-start 3 / center-end;
         grid-row: 1 / 2;
         background-color: $color-primary;
         z-index: 0;
+
+        @include respond(1080) {
+            grid-column: borderl-start / borderr-end;
+            grid-row: 2 / 3;
+            background-color: $color-secondary;
+        }
         
     }
 
@@ -87,6 +114,14 @@
     &__text {
         width: 25vw;
         margin-bottom: 5rem;
+
+        @include respond(1080) {
+            width: 40vw;
+        }
+
+        @include respond(600) {
+            width: 70vw;
+        }
     }
 
     &__btn {
@@ -103,19 +138,43 @@
     grid-column: center-start / col-end 2;
     grid-row: 1 / 2;
 
+    @include respond(1080) {
+        grid-column: center-start / center-end;
+        grid-row: 1 / 2;
+    }
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 39vw;
+    width: auto;
 
 
     &__logo {
-        width: 50%;
+        width: 35%;
+        text-align: center;
+        @include respond(1080) {
+            width: 20%;
+        }
     }
 
     &__headshot {
-        width: 50%;
+        width: 35%;
         border-radius: 50%;
-        margin: 5rem 0;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+
+        @include respond(1080) {
+            width: 20%;
+            margin-bottom: 10rem;
+        }
+
+        &2 {
+            align-self: center;
+        }
+        
     }
+
+   
 }

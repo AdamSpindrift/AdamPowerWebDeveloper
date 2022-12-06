@@ -5,6 +5,11 @@
     grid-column: center-start / center-end;
     height: 100vh;
 
+    @include respond(1080) {
+        height: max-content;
+        padding-top: 5rem;
+    }
+
     display: grid;
     align-items: center;
     justify-items: center;
