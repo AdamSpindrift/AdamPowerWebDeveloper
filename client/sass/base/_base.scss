@@ -74,4 +74,9 @@
   display: grid;
   grid-template-rows: repeat(6, min-content);
   grid-template-columns: [borderl-start] minmax(6rem, 10rem) [borderl-end center-start] repeat(4,[col-start] 1fr [col-end]) [center-end borderr-start] minmax(6rem, 10rem) [borderr-end];
+
+  @include respond(1080) {
+    grid-template-columns: [borderl-start] minmax(1rem, 5rem) [borderl-end center-start] repeat(4,[col-start] 1fr [col-end]) [center-end borderr-start] minmax(1rem, 5rem) [borderr-end];
+
+}
 }
