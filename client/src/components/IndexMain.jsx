@@ -350,8 +350,9 @@ function IndexMain() {
                   <h2 className="work__heading">Our Work</h2>
 
                   <div className="work__grid">
-
+                        <a href="https://www.backroom.co.uk/" rel="noopener noreferrer" target="_blank">
                         <img src="../images/projects/Backroom_International_Hire_Solutions.png" alt="Backroom Internation Hire Solutions" className="work__img" />
+                        </a>
 
                         <div className="work__text">
                               <h3 className="work__title">Backroom International Hire Solutions</h3>
@@ -368,8 +369,10 @@ function IndexMain() {
                               <h3 className="work__title">Metrics</h3>
                               <p className="work__description">Metrics is an application we built for djca Chartered Accoutants. It retrieves jobs from their CRM system and allows employees to log time spent on each job. We can then use the data to give accurate visibility on how long each job takes and the profit/loss on each job.</p>
                         </div>
-
+                        
+                        <a href="https://www.spindriftprojects.com/" rel="noopener noreferrer" target="_blank">
                         <img src="../images/projects/Spindrift_Projects.png" alt="Spindrift Projects" className="work__img" />
+                        </a>
 
                         <div className="work__text">
                               <h3 className="work__title">Spindrift Projects</h3>
