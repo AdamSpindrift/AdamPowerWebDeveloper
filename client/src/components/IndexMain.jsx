@@ -406,10 +406,10 @@ function IndexMain() {
                   <div className="work__grid">
 
                         <div>
-                              <img src="../images/projects/Financial_Modelling/P&L Actuals vs Budget.png" alt="Financial Modelling - P&L Actuals vs Budget" className="work__img work__img--quad work__img--quad--1" />
-                              <img src="../images/projects/Financial_Modelling/Summary P&L.png" alt="Financial Modelling - Summary P&L" className="work__img work__img--quad work__img--quad--2" />
-                              <img src="../images/projects/Financial_Modelling/Cost Table Input.png" alt="Financial Modelling - Cost Table Input" className="work__img work__img--quad work__img--quad--3" />
-                              <img src="../images/projects/Financial_Modelling/Run Rate Table.png" alt="MetricFinancial Modelling - Run Rate Table" className="work__img work__img--quad work__img--quad--4" />
+                              <img src="../images/projects/Financial_Modelling_pics/P&L Actuals vs Budget.png" alt="Financial Modelling - P&L Actuals vs Budget" className="work__img work__img--quad work__img--quad--1" />
+                              <img src="../images/projects/Financial_Modelling_pics/Summary P&L.png" alt="Financial Modelling - Summary P&L" className="work__img work__img--quad work__img--quad--2" />
+                              <img src="../images/projects/Financial_Modelling_pics/Cost Table Input.png" alt="Financial Modelling - Cost Table Input" className="work__img work__img--quad work__img--quad--3" />
+                              <img src="../images/projects/Financial_Modelling_pics/Run Rate Table.png" alt="MetricFinancial Modelling - Run Rate Table" className="work__img work__img--quad work__img--quad--4" />
                         </div>
                               
                         <div className="work__text">
