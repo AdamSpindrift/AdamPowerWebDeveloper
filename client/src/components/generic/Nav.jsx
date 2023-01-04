@@ -43,6 +43,11 @@ function Nav() {
 						</a>
                     </li>
                     <li className="navigation__item">
+                        <a href="/#financial-modelling" onClick={unCheck} className="navigation__link">
+							Financial Modelling
+						</a>
+                    </li>
+                    <li className="navigation__item">
                         <a href="/#tech" onClick={unCheck} className="navigation__link">
 							Tech
 						</a>

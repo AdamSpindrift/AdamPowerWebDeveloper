@@ -37,6 +37,37 @@
 
     &__img {
         width: 100%;
+
+        &--quad {
+            width: 50%;
+            
+            transition: all 0.5s;
+
+            &--1 {
+                &:hover {
+                    transform: translateX(20rem) translateY(10rem) scale(1.7);  
+                }  
+            }
+
+            &--2 {
+                
+                &:hover {
+                    transform: translateX(-20rem) translateY(10rem) scale(1.7);  
+                } 
+            }
+
+            &--3 {
+                &:hover {
+                    transform: translateX(20rem) translateY(-10rem) scale(1.7);  
+                } 
+            }
+
+            &--4 {
+                &:hover {
+                    transform: translateX(-20rem) translateY(-10rem) scale(1.7);  
+                } 
+            }
+        }
     }
 
     &__title {

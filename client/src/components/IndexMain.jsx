@@ -362,12 +362,20 @@ function IndexMain() {
                               <p className="work__link">Check me out &#8594;</p>
                               </a>
                         </div>
-
-                        <img src="../images/projects/Metrics.png" alt="Metrics" className="work__img" />
+                        
+                        <div>
+                              <img src="../images/projects/Metrics/01 Login.png" alt="Metrics Login" className="work__img work__img--quad work__img--quad--1" />
+                              <img src="../images/projects/Metrics/02 Timer.png" alt="Metrics Timer" className="work__img work__img--quad work__img--quad--2" />
+                              <img src="../images/projects/Metrics/03 Job.png" alt="Metrics Job" className="work__img work__img--quad work__img--quad--3" />
+                              <img src="../images/projects/Metrics/05 d3 Chart - Average Job Duration.png" alt="Metrics D3.js Chart" className="work__img work__img--quad work__img--quad--4" />
+                        </div>
+                        
 
                         <div className="work__text">
                               <h3 className="work__title">Metrics</h3>
                               <p className="work__description">Metrics is an application we built for djca Chartered Accoutants. It retrieves jobs from their CRM system and allows employees to log time spent on each job. We can then use the data to give accurate visibility on how long each job takes and the profit/loss on each job.</p>
+                              <br></br>
+                              <p className="work__description">We used a MERN stack to build the application, MongoDB database, Node.js, Express.js server in the Backend and React.js for the Frontend. Technologies employed include Redux and D3.js. I used D3 to create visual charts that enabled managers to see at a glance profitability on clients and jobs.</p>
                         </div>
                         
                         <a href="https://www.spindriftprojects.com/" rel="noopener noreferrer" target="_blank">
@@ -385,6 +393,34 @@ function IndexMain() {
                   </div>
 
 
+            </section>
+
+            <div className="border-8">&nbsp;</div>
+
+            <div className="border-8">&nbsp;</div>
+
+            <section id="financial-modelling" className="work">
+
+                  <h2 className="work__heading">Financial Modelling</h2>
+
+                  <div className="work__grid">
+
+                        <div>
+                              <img src="../images/projects/Financial_Modelling/P&L Actuals vs Budget.png" alt="Financial Modelling - P&L Actuals vs Budget" className="work__img work__img--quad work__img--quad--1" />
+                              <img src="../images/projects/Financial_Modelling/Summary P&L.png" alt="Financial Modelling - Summary P&L" className="work__img work__img--quad work__img--quad--2" />
+                              <img src="../images/projects/Financial_Modelling/Cost Table Input.png" alt="Financial Modelling - Cost Table Input" className="work__img work__img--quad work__img--quad--3" />
+                              <img src="../images/projects/Financial_Modelling/Run Rate Table.png" alt="MetricFinancial Modelling - Run Rate Table" className="work__img work__img--quad work__img--quad--4" />
+                        </div>
+                              
+                        <div className="work__text">
+                              <h3 className="work__title">Financial Modelling</h3>
+                              <p className="work__description">I am an experienced Financial Modeller. I build full 3-way Financial Models in Excel for Medium and Large size businesses. I am an advanced Excel user and haven't come across a problem i couldn't find an elegant solution to yet. If you have a project that isn't Financial Modelling then give me a shout, i can probably help you.</p>
+                              <br></br>
+                              <p className="work__description">I build custom assumptions/inputs and calculators for each model, depending on a specific clients needs. This could be projecting coffee shop sales, modelling financial services such as loan providers, building an operations sheet to plan people and equipment resourcing or anything else you would like. These are examples of what I have done. With the power of Excel, in the right hands, there are many possibilities.</p>
+                        </div>
+
+                  </div>
+            
             </section>
 
             <div className="border-8">&nbsp;</div>

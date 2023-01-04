@@ -899,6 +899,17 @@ input {
         flex-direction: column; } }
   .work__img {
     width: 100%; }
+    .work__img--quad {
+      width: 50%;
+      transition: all 0.5s; }
+      .work__img--quad--1:hover {
+        transform: translateX(20rem) translateY(10rem) scale(1.7); }
+      .work__img--quad--2:hover {
+        transform: translateX(-20rem) translateY(10rem) scale(1.7); }
+      .work__img--quad--3:hover {
+        transform: translateX(20rem) translateY(-10rem) scale(1.7); }
+      .work__img--quad--4:hover {
+        transform: translateX(-20rem) translateY(-10rem) scale(1.7); }
   .work__link {
     transition: all 0.2s;
     color: #ff8922;

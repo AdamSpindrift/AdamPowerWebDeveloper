@@ -1,5 +1,4 @@
 import React from 'react';
-import { navigate } from 'hookrouter';
 import SocialShare from "./SocialShares";
 
 function Footer() {
