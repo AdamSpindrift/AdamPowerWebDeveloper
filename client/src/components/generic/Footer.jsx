@@ -10,7 +10,7 @@ function Footer() {
 	return (
 		<footer className="footer">
 			<div className="footer__logo-box">
-				<img src="../images/AP Web Dev Logo_2_Grey.png" alt="Adam Power Web Development Logo" className="footer__logo" />
+				<img src="../images/AP Web Dev Logo_2_Grey.png" alt="Adam Power Web Developer Logo" className="footer__logo" />
 			</div>
 
 			<div className="">
@@ -46,13 +46,13 @@ function Footer() {
 					</div>
 
 					<SocialShare shareURL={shareURL}
-                        title="Adam Power Web Development"
+                        title="Adam Power - Web Developer"
                         summary="Web design and development"
                         hashtag="#apwebdev"
                     />
 
 					<div className="footer__copyright">
-						<h4 className="footer__copyright-text">Copyright Adam Power Web Development &#169;</h4>
+						<h4 className="footer__copyright-text">Copyright Adam Power Web Developer &#169;</h4>
 					</div>
 				</div>
 				<div className="footer__page-end">

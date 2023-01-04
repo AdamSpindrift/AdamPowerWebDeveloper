@@ -144,7 +144,7 @@ function IndexMain() {
                         animate={{opacity: 1, y:0}}
                         transition={{duration: .5, delay:1.15}}
                         initial={{opacity: 0}}>
-                  <h2 className="title__webdev">Web Development</h2>
+                  <h2 className="title__webdev">Web Developer</h2>
                   </motion.div>
                   {/* <motion.div
                         animate={{opacity: 1,}}
