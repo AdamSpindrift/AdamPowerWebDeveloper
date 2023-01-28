@@ -1,25 +1,22 @@
-import React, { useEffect, useState } from "react";
-import { navigate } from "hookrouter";
-import SocialShare from "./generic/SocialShares";
 import axios from "axios";
-import { motion, useAnimation} from "framer-motion/dist/framer-motion";
+import { motion, useAnimation } from "framer-motion/dist/framer-motion";
+import { navigate } from "hookrouter";
+import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 // Custom Modules
-import scrollHandler from "./generic/scrollHandler";
 import Loading from "./generic/Loading";
 // SVGs
-import dataChart from "../svg/undraw_Data_points_re_vkpq.svg";
 import mobile from "../svg/2205195_mobile_phone_screen_smart_icon.svg";
 import desktop from "../svg/290121_computer_desktop_monitor_computer screen_icon.svg";
-import meeting from "../svg/networking-svgrepo-com.svg";
-import paint from "../svg/728914_brush_paint_art_color_design_icon.svg";
 import coding from "../svg/coding-web-development-svgrepo-com (1).svg";
-import test from "../svg/test-svgrepo-com.svg";
-import world from "../svg/world-wide-web-svgrepo-com.svg";
-import ae from "../svg/technology/after-effects-cc-logo-svgrepo-com.svg";
+import meeting from "../svg/networking-svgrepo-com.svg";
 import ai from "../svg/technology/adobe-illustrator-cc-logo-svgrepo-com.svg";
-import ps from "../svg/technology/photoshop-cc-logo-svgrepo-com.svg";
 import xd from "../svg/technology/adobe-xd-logo-svgrepo-com (1).svg";
+import ae from "../svg/technology/after-effects-cc-logo-svgrepo-com.svg";
+import ps from "../svg/technology/photoshop-cc-logo-svgrepo-com.svg";
+import test from "../svg/test-svgrepo-com.svg";
+import dataChart from "../svg/undraw_Data_points_re_vkpq.svg";
+import world from "../svg/world-wide-web-svgrepo-com.svg";
 require("dotenv").config()
 
 
@@ -473,7 +470,7 @@ function IndexMain() {
                                     animate={{opacity: 1}}
                                     transition={{duration: 1, delay:0.9}}
                                     initial={{opacity: 0}}>
-                                          <img src="../images/technology/MongoDB_Logo.png" alt="Mongo DB" className="tech__img tech__img--large" />
+                                          <img src="../images/technology/Python_Logo.png" alt="Python" className="tech__img tech__img--large" />
                                           {/* <h4 className="tech__heading-secondary"></h4> */}
                               </motion.div>
                         </div>
@@ -493,7 +490,7 @@ function IndexMain() {
                               transition={{duration: 1, delay:1.5}}
                               initial={{opacity: 0}}>
                                     <div className="tech__card">
-                                          <img src="../images/technology/BCrypt_Logo.png" alt="BCrypt" className="tech__img" />
+                                          <img src="../images/technology/OAuth2.0_Logo.png" alt="OAuth2.0" className="tech__img" />
                                           {/* <h4 className="tech__heading-secondary"></h4> */}
                                     </div>
                         </motion.div>
@@ -508,7 +505,7 @@ function IndexMain() {
                                     animate={{opacity: 1}}
                                     transition={{duration: 1, delay:1.8}}
                                     initial={{opacity: 0}}>
-                                          <img src="../images/technology/Sass_Logo.png" alt="Sass" className="tech__img tech__img--large" />
+                                          <img src="../images/technology/PostgreSQL_Logo.png" alt="PostgreSQL" className="tech__img tech__img--large" />
                                           {/* <h4 className="tech__heading-secondary"></h4> */}
                               </motion.div>
                         </div>
@@ -518,7 +515,7 @@ function IndexMain() {
                                     animate={{opacity: 1}}
                                     transition={{duration: 1, delay:2.1}}
                                     initial={{opacity: 0}}>
-                                          <img src="../images/technology/AWS_Logo.png" alt="Amazon Web Services" className="tech__img tech__img--large" />
+                                          <img src="../images/technology/MongoDB_Logo.png" alt="Mongo DB" className="tech__img tech__img--large" />
                                           {/* <h4 className="tech__heading-secondary"></h4> */}
                               </motion.div>
                         </div>
@@ -539,7 +536,7 @@ function IndexMain() {
                               transition={{duration: 1, delay:2.7}}
                               initial={{opacity: 0}}>
                                     <div className="tech__card">
-                                          <img src="../images/technology/Heroku_Logo.png" alt="Heroku" className="tech__img" />
+                                          <img src="../images/technology/Sass_Logo.png" alt="Sass" className="tech__img" />
                                           {/* <h4 className="tech__heading-secondary">D3 Charts</h4> */}
                                     </div>
                         </motion.div>
