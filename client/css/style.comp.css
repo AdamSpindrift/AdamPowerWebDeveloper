@@ -588,7 +588,8 @@ input {
     font-size: 4rem; }
     @media (max-width: 67em) {
       .contact__btn {
-        font-size: 8rem; } }
+        font-size: 8rem;
+        width: 30rem; } }
     .contact__btn:active {
       transform: translate(1rem, 0rem) scale(0.95); }
   .contact__label {
