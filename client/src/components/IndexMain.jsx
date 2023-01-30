@@ -183,7 +183,7 @@ function IndexMain() {
                         animate={{opacity: 1, y:0}}
                         transition={{duration: .5, delay:2}}
                         initial={{opacity: 0}}>
-                  <h3 className="welcome__text">When your ready give me a shout and we can get cracking building something great.</h3>
+                  <h3 className="welcome__text">When you're ready give me a shout and we can get cracking building something great.</h3>
                   </motion.div>
                   <motion.div
                         animate={{opacity: 1}}
