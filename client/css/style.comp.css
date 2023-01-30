@@ -233,6 +233,15 @@ textarea {
   font-size: 5rem;
   font-weight: 300; }
 
+.work__title--djca {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: normal; }
+  @media (max-width: 67em) {
+    .work__title--djca {
+      font-size: 8rem; } }
+
 .absCenter {
   position: absolute;
   top: 50%;

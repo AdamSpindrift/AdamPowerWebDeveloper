@@ -212,3 +212,20 @@ textarea {
   font-size: 5rem;
   font-weight: 300;
 }
+
+.work {
+
+  &__title {
+
+    &--djca {
+      font-family: 'Poppins', sans-serif;
+      font-size: 4rem;
+      font-weight: 300;
+      line-height: normal;
+
+      @include respond(1080) {
+        font-size: 8rem;
+      }
+    }
+  }
+}

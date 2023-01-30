@@ -347,6 +347,40 @@ function IndexMain() {
                   <h2 className="work__heading">Our Work</h2>
 
                   <div className="work__grid">
+
+                        {/* Metrics */}
+                        
+                        <div>
+                              <img src="../images/projects/Metrics/01 Login.png" alt="Metrics Login" className="work__img work__img--quad work__img--quad--1" />
+                              <img src="../images/projects/Metrics/02 Timer.png" alt="Metrics Timer" className="work__img work__img--quad work__img--quad--2" />
+                              <img src="../images/projects/Metrics/03 Job.png" alt="Metrics Job" className="work__img work__img--quad work__img--quad--3" />
+                              <img src="../images/projects/Metrics/05 d3 Chart - Average Job Duration.png" alt="Metrics D3.js Chart" className="work__img work__img--quad work__img--quad--4" />
+                        </div>
+                  
+
+                        <div className="work__text">
+                              <h3 className="work__title">Metrics</h3>
+                              <p className="work__description">Metrics is an application I built for djca Chartered Certified Accountants. It retrieves jobs from their CRM system and allows employees to log time spent on each job. We can then use the data to give accurate visibility on how long each job takes and the profit/loss on each job.</p>
+                              <br></br>
+                              <p className="work__description">I used a MERN stack to build the application, MongoDB database, Node.js, Express.js server in the Backend and React.js for the Frontend. Technologies employed include Redux and D3.js. D3.js is used to create visual charts that enabled managers to see at a glance profitability on clients and jobs.</p>
+                        </div>
+
+                        {/* Wallapop Web Scraper */}
+
+                        
+                        <img src="../images/projects/Wallapop_Web_Scraper_Tellegram_Notification.png" alt="Wallapop Web Scraper Telegram Notification" className="work__img" />
+                        
+
+                        <div className="work__text">
+                              <h3 className="work__title">Wallapop Web Scraper</h3>
+                              <p className="work__description">This is a service i built using Python to scrape Wallapop for listings of a given criteria. It then compares the listings it has found against listings previously found and stored in a PostgreSQL database, then sends a notification to the user on Wallapop of the new listings it has found.</p>
+                              <br></br>
+                              <p className="work__description">The service uses Selenium to do the scraping and runs automatically on a 3 hour interval.</p>
+                        </div>
+
+
+                        {/* Backroom */}
+
                         <a href="https://www.backroom.co.uk/" rel="noopener noreferrer" target="_blank">
                         <img src="../images/projects/Backroom_International_Hire_Solutions.png" alt="Backroom Internation Hire Solutions" className="work__img" />
                         </a>
@@ -359,21 +393,9 @@ function IndexMain() {
                               <p className="work__link">Check me out &#8594;</p>
                               </a>
                         </div>
-                        
-                        <div>
-                              <img src="../images/projects/Metrics/01 Login.png" alt="Metrics Login" className="work__img work__img--quad work__img--quad--1" />
-                              <img src="../images/projects/Metrics/02 Timer.png" alt="Metrics Timer" className="work__img work__img--quad work__img--quad--2" />
-                              <img src="../images/projects/Metrics/03 Job.png" alt="Metrics Job" className="work__img work__img--quad work__img--quad--3" />
-                              <img src="../images/projects/Metrics/05 d3 Chart - Average Job Duration.png" alt="Metrics D3.js Chart" className="work__img work__img--quad work__img--quad--4" />
-                        </div>
-                        
 
-                        <div className="work__text">
-                              <h3 className="work__title">Metrics</h3>
-                              <p className="work__description">Metrics is an application we built for djca Chartered Accoutants. It retrieves jobs from their CRM system and allows employees to log time spent on each job. We can then use the data to give accurate visibility on how long each job takes and the profit/loss on each job.</p>
-                              <br></br>
-                              <p className="work__description">We used a MERN stack to build the application, MongoDB database, Node.js, Express.js server in the Backend and React.js for the Frontend. Technologies employed include Redux and D3.js. I used D3 to create visual charts that enabled managers to see at a glance profitability on clients and jobs.</p>
-                        </div>
+                        
+                        {/* Spindrift Projects */}
                         
                         <a href="https://www.spindriftprojects.com/" rel="noopener noreferrer" target="_blank">
                         <img src="../images/projects/Spindrift_Projects.png" alt="Spindrift Projects" className="work__img" />
@@ -381,9 +403,27 @@ function IndexMain() {
 
                         <div className="work__text">
                               <h3 className="work__title">Spindrift Projects</h3>
-                              <p className="work__description">We used a lot of imagery from projects on this site to really show off the shows Spindrift Projects design.</p>
+                              <p className="work__description">I used a lot of imagery from projects on this site to really show off the shows Spindrift Projects design.</p>
                               <br></br>
                               <a href="https://www.spindriftprojects.com/" rel="noopener noreferrer" target="_blank">
+                              <p className="work__link">Check me out &#8594;</p>
+                              </a>
+                        </div>
+
+                        {/* djca */}
+                        
+                        <a href="https://www.djca.co.uk/sectors/creative-industries/" rel="noopener noreferrer" target="_blank">
+                        <img src="../images/projects/djca_website.png" alt="djca Chartered Certifed Accountants" className="work__img" />
+                        </a>
+
+                        <div className="work__text">
+                              <h3 className="work__title work__title--djca">djca</h3>
+                              <p className="work__description">I was brought in to do updates to the djca site which was built in Wordpress by another supplier.</p>
+                              <br></br>
+                              <p className="work__description">New pages include the addition of a "Services" section to the site and new pages include "Accounts Production", "Payroll", "Financial Modelling", "Architecture", "Creative Industries", "Healthcare", "Marketing Agencies" and "Tech"</p>
+                              <br></br>
+                              <p className="work_description">The brief was to find some new stunning imagery to align with this modern firms' branding and keeping the new copyright in the style originally designed for the site.</p>
+                              <a href="https://www.djca.co.uk/" rel="noopener noreferrer" target="_blank">
                               <p className="work__link">Check me out &#8594;</p>
                               </a>
                         </div>
