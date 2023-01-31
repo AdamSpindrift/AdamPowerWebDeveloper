@@ -877,6 +877,8 @@ input {
       grid-column: 3 / 5; }
     .tech__card--aws {
       grid-column: 5 / 7; }
+    .tech__card--xlconnect {
+      grid-column: 1 / 3; }
   .tech__img {
     width: 100%; }
     .tech__img--large {

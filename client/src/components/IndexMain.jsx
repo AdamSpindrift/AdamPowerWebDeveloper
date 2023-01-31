@@ -621,6 +621,16 @@ function IndexMain() {
                                           <h4 className="tech__heading-secondary">Photoshop</h4>
                                     </div>
                         </motion.div>
+
+                        <div className="tech__card tech__card--xlconnect">
+                              <motion.div
+                                    animate={{opacity: 1}}
+                                    transition={{duration: 1, delay:4}}
+                                    initial={{opacity: 0}}>
+                                          <img src="../images/technology/XLConnect_Logo.png" alt="XLConnect" className="tech__img tech__img--large" />
+                                          {/* <h4 className="tech__heading-secondary"></h4> */}
+                              </motion.div>
+                        </div>
                   </div>
 
             </section>
