@@ -148,7 +148,7 @@ function IndexMain() {
                         transition={{duration: .5, delay:1.4}}
                         initial={{opacity: 0, x:275}}
                         className="title__headshot2"> */}
-                  <img src="../images/Adam_Power_Headshot_2020_3.png" alt="Adam Power" className="title__headshot"/>
+                  <img src="../images/Adam_Power_Headshot_2023_1000.png" alt="Adam Power" className="title__headshot"/>
                   {/* </motion.div> */}
             </section>
 
